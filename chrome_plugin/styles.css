@@ -1,0 +1,38 @@
+#image-analyzer-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+#image-analyzer-sidebar.open {
+    transform: translateX(0);
+}
+
+#image-analyzer-toggle {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 10000;
+}
+
+#image-analyzer-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
