@@ -16,6 +16,11 @@
   "background": {
     "service_worker": "background.js"
   },
+  "icons": {
+    "16": "img.png",
+    "48": "img.png",
+    "128": "img.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
