@@ -1,11 +1,13 @@
-chrome.contextMenus.create({
-  id: "analyzeImage",
-  title: "Analyze Image",
-  contexts: ["image"]
-});
+chrome.contextMenus.create(
+    {
+      id: "analyzeImageYYY",
+      title: "Analyze Image",
+      contexts: ["image"]
+    }
+);
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "analyzeImage") {
+  if (info.menuItemId === "analyzeImageYYY") {
     analyzeImage(info.srcUrl, tab.id);
   }
 });

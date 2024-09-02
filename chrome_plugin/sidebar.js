@@ -15,8 +15,8 @@ function addResult(data) {
             data: data
         });
         // Keep only the last 10 results
-        if (items.results.length > 10) {
-            items.results = items.results.slice(0, 10);
+        if (items.results.length > 20) {
+            items.results = items.results.slice(0, 20);
         }
         chrome.storage.local.set({results: items.results});
     });
@@ -38,6 +38,7 @@ chrome.storage.local.get({results: []}, function(items) {
 // Listen for messages from the content script
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "showResult") {
+        console.log(request.data)
         addResult(request.data);
     }
 });

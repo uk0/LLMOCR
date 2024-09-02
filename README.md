@@ -10,6 +10,8 @@
 * PP-OCR-V4.0
 * Ollama (`gemma2:2b-instruct-q8_0`)
 * flask
+* chrome plugin
+
 
 ```shell
 
@@ -33,3 +35,17 @@ python app.py
 *  Result for Chrome Tab will be shown as below on right div box
 
 ![img.png](doc/img1.png)
+
+
+
+### Model 
+
+* llama3.1:8b-instruct-q8_0 `效果最好`
+* gemma2:9b-instruct-q8_0
+* Qwen1.5-MoE-A2.7B-Chat:latest
+
+
+### TODO
+
+* 优化提示词(Doing...)
+* 使用RAG优化结果，使结果更稳定(Doing...)
