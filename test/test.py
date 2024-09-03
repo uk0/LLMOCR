@@ -14,7 +14,7 @@ default_prompt = """你的主要职责是将文本内的消息转换为JSON格�
 
 msg = """
 ```
-['体验日期', '2024.8.25', '场所地点', '城关区甘南路', '服务项目', '洗吹做，按摩，69，舌吻，口爆，胸推', '年龄容貌', '5', '环境评分', '7', '总体消费', '500', '联系方式', 'QQ3674563490', '联络攻略', '平台推荐']
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 """
 

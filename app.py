@@ -70,7 +70,7 @@ def analyze_image():
 
     # 调用 Ollama 进行分析
     chat_completion = Client(host='http://localhost:11434')
-    response = chat_completion.chat(model='gemma2:9b-instruct-q8_0',format='json' ,options={
+    response = chat_completion.chat(model='llama3.1:8b-instruct-fp16',format='json' ,options={
         'temperature': 0.1
     },messages=[
         {
